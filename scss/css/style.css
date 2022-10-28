@@ -124,9 +124,10 @@ header nav .perfil a .photo:hover {
 }
 
 .container {
-  display: flex;
-  align-items: center;
+  display: grid;
+  align-items: start;
   justify-content: center;
+  align-content: center;
   background-color: #c6c6c6;
   height: calc(100vh - 50px);
   width: 100%;

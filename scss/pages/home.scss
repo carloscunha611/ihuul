@@ -76,7 +76,8 @@ header {
 }
 
 .container {
-  @include display(flex, center, center);
+  @include display(grid, start, center);
+  align-content: center;
   background-color: $secondary-color;
   height: calc(100vh - 50px);
   width: 100%;
