@@ -1,0 +1,281 @@
+body {
+  @include display(flex, center, center);
+  flex-direction: column;
+  background-color: $secondary-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  @include display(flex, center, center);
+  width: 100%;
+  padding: 10px 20px;
+  background-color: $primary-color;
+
+  nav {
+    @include display(flex, center, space-between);
+    width: 100%;
+    gap: 5px;
+    user-select: none;
+    animation: navbar 0.5s;
+    .local {
+      @include display(flex, center, center);
+      gap: 0.5em;
+      text-align: center;
+      color: $secondary-color;
+      p {
+        font-weight: bold;
+      }
+      span {
+        line-height: 2rem;
+        font-size: 1em;
+      }
+    }
+    .options {
+      @include display(flex, center, space-around);
+      margin-right: 00px;
+      gap: 10px;
+      font-size: 10pt;
+
+      a {
+        color: $secondary-color;
+        text-decoration: none;
+        &:hover {
+          transition: 0.5s;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .perfil {
+      @include display(flex, center, center);
+      width: 30px;
+      a {
+        @include display(flex, center, center);
+        height: 30px;
+        .photo {
+          width: 30px;
+          border: 2px solid $secondary-color;
+          border-radius: 50%;
+          transition: 0.5s;
+          cursor: pointer;
+          &:hover {
+            border-radius: 25%;
+            border-right: 2px solid $yellow;
+            border-left: 2px solid $green;
+            border-top: 2px solid $blue;
+            border-bottom: 2px solid white;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.container {
+  @include display(flex, center, center);
+  background-color: $secondary-color;
+  height: calc(100vh - 50px);
+  width: 100%;
+
+  flex-direction: column;
+  padding: 0 20px;
+
+  .logo {
+    @include display(flex, center, center);
+    user-select: none;
+    width: 100%;
+    height: 25%;
+
+    .letter {
+      @include display(flex, center, center);
+      font-family: 'Bungee Shade', cursive;
+      font-size: 60pt;
+      transition: 0.3s;
+      &.i {
+        color: $primary-color;
+        &:hover {
+          color: $green;
+          font-size: 65pt;
+        }
+      }
+      &.h {
+        color: $primary-color;
+        &:hover {
+          font-size: 65pt;
+          color: $yellow;
+        }
+      }
+      &.u {
+        color: $primary-color;
+        &:hover {
+          font-size: 65pt;
+          color: $green;
+        }
+      }
+      &.l {
+        color: $primary-color;
+        &:hover {
+          font-size: 65pt;
+          color: $yellow;
+        }
+      }
+      &.e {
+        color: $primary-color;
+        &:hover {
+          font-size: 65pt;
+          color: $green;
+        }
+      }
+    }
+  }
+  .search-box {
+    @include display(flex, center, center);
+    flex-direction: column;
+    width: 100%;
+    height: 25%;
+
+    form {
+      @include display(flex, center, flex-center);
+      flex-direction: column;
+      .hunt {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-radius: 8px;
+        border: 3px solid $primary-color;
+        .lupa {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: $secondary-color;
+          border: none;
+          border-radius: 50% 0px 0px 50%;
+          height: 3.38em;
+          width: 3em;
+          ion-icon {
+            font-size: 15pt;
+            color: $primary-color;
+          }
+        }
+        .search {
+          border: none;
+          width: 100%;
+          height: 2.8em;
+          font-size: 12pt;
+          background: $secondary-color;
+          color: $primary-color;
+
+          padding: 0px 10px;
+          outline: none;
+          appearance: none;
+        }
+        .mic {
+          height: 2.8em;
+          width: 3em;
+          border-radius: 0% 50% 50% 0%;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+  .go {
+    @include display(flex, center, center);
+    margin-top: 30px;
+    width: 50vw;
+    gap: 20px;
+    button.btn {
+      width: 10em;
+      height: 3em;
+      border-radius: 4px;
+      border: 3px solid $primary-color;
+      background: $primary-color;
+      color: $secondary-color;
+      font-weight: 900;
+      cursor: pointer;
+
+      transition: 0.5s;
+      &:hover {
+        opacity: 0.9;
+      }
+      &:active {
+        opacity: 0.8;
+      }
+    }
+
+    button {
+      @include display(flex, center, center);
+      background-color: $secondary-color;
+    }
+    button.luck {
+      width: 10em;
+      height: 3em;
+      border-radius: 5px;
+      font-weight: 900;
+      border: 3px solid $primary-color;
+      cursor: pointer;
+      a {
+        color: $primary-color;
+
+        padding: 0.73em;
+      }
+
+      transition: 1s;
+      &:hover {
+        border: 3px solid #1d1d1da9;
+        font-weight: 900;
+      }
+      &:active {
+        border: 3px solid #1d1d1da8;
+      }
+    }
+  }
+}
+
+footer {
+  @include display(flex, center, center);
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  color: $primary-color;
+  font-size: 10pt;
+  user-select: none;
+  background-color: $secondary-color;
+  a {
+    text-decoration: none;
+  }
+}
+
+.links {
+  @include display(flex, center, space-between);
+  width: 100%;
+  padding: 10px 50px;
+}
+
+.about {
+  display: flex;
+  gap: 20px;
+  a {
+    font-size: 11pt;
+    color: $primary-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.setting {
+  display: flex;
+  gap: 20px;
+  a {
+    font-size: 11pt;
+    color: $primary-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

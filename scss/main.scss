@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Bungee+Shade&family=Varela+Round&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+}
+@import './tools/mixin.scss';
+@import './colors/colors.scss';
+@import './components/effects.scss';
+@import './pages/home.scss';
+
+@import './components/responcive.scss';
