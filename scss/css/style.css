@@ -140,7 +140,7 @@ header nav .perfil a .photo:hover {
   justify-content: center;
   user-select: none;
   width: 100%;
-  height: 25%;
+  height: 15rem;
 }
 .container .logo .letter {
   display: flex;
@@ -201,19 +201,19 @@ header nav .perfil a .photo:hover {
 }
 .container .search-box form .hunt {
   display: flex;
-  flex-direction: row;
   width: 100%;
-  border-radius: 8px;
+  height: 3rem;
+  border-radius: 2px;
   border: 3px solid #1d1d1d;
 }
 .container .search-box form .hunt .lupa {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #c6c6c6;
+  background-color: transparent;
   border: none;
-  border-radius: 50% 0px 0px 50%;
-  height: 3.38em;
+  border-radius: 2px;
+  height: 100%;
   width: 3em;
 }
 .container .search-box form .hunt .lupa ion-icon {
@@ -223,19 +223,19 @@ header nav .perfil a .photo:hover {
 .container .search-box form .hunt .search {
   border: none;
   width: 100%;
-  height: 2.8em;
+  height: 100%;
   font-size: 12pt;
-  background: #c6c6c6;
+  background: transparent;
   color: #1d1d1d;
   padding: 0px 10px;
   outline: none;
   appearance: none;
+  z-index: 2;
 }
 .container .search-box form .hunt .mic {
-  height: 2.8em;
   width: 3em;
-  border-radius: 0% 50% 50% 0%;
-  background-color: #c6c6c6;
+  border-radius: 2px;
+  background-color: transparent;
 }
 .container .go {
   display: flex;
@@ -248,7 +248,7 @@ header nav .perfil a .photo:hover {
 .container .go button.btn {
   width: 10em;
   height: 3em;
-  border-radius: 4px;
+  border-radius: 2px;
   border: 3px solid #1d1d1d;
   background: #1d1d1d;
   color: #c6c6c6;
@@ -271,7 +271,7 @@ header nav .perfil a .photo:hover {
 .container .go button.luck {
   width: 10em;
   height: 3em;
-  border-radius: 5px;
+  border-radius: 2px;
   font-weight: 900;
   border: 3px solid #1d1d1d;
   cursor: pointer;
@@ -339,7 +339,7 @@ footer a {
 
 @media (max-width: 428px) {
   header nav {
-    height: 4rem;
+    height: 3rem;
   }
   header nav .options {
     gap: 25px;
@@ -351,7 +351,7 @@ footer a {
     display: none;
   }
   header nav .perfil a .photo {
-    width: 50px;
+    width: 45px;
   }
 
   .container {
